@@ -112,7 +112,7 @@ def exercicio5(s: socket, addr: tuple):
         try:
             s.connect(addr)
             return
-        except Exception as e:
+        except:
             time.sleep(10)
         
     # fazLog('esqueci de fazer o exercicio 5\n') # comente quando fizer o exercicio
@@ -131,9 +131,51 @@ def exercicio6(s: socket, sensor: str, estado: str):
     # converta para bytes
     # envie com s.send(bytes)
 
-    fazLog('esqueci de fazer o exercicio 6\n') # comente quando fizer o exercicio
+    envio = f'{sensor}={estado}\n'
+    s.send(envio.encode("utf-8"))
+
+    # fazLog('esqueci de fazer o exercicio 6\n') # comente quando fizer o exercicio
 
 
     #---------------------------------------------------------------------
     # A ENTREGA DA SOMATIVA É ESTE ARQUIVO
     # COPIE O RESULTADO DO ARQUIVO log.txt E COLE ABAIXO PARA ENTREGAR A TAREFA
+
+'''
+2023-09-26 20:26:05.002877 : MONITOR: aguardando dispositivos de IOT em 9999
+2023-09-26 20:26:05.002931 : CONSOLE: aguardando conexão do usuário em 8888
+2023-09-26 20:26:17.179426 : MONITOR: o sensor sala registrou: ('127.0.0.1', 50542)
+2023-09-26 20:26:17.179624 : MONITOR: o sensor quarto registrou: ('127.0.0.1', 50543)
+2023-09-26 20:26:17.181908 : MONITOR: o sensor cozinha registrou: ('127.0.0.1', 50544)
+2023-09-26 20:26:33.445750 : CONSOLE: O usuário conectou
+2023-09-26 20:26:33.454649 : CONSOLE RECEBEU: sala ligar
+2023-09-26 20:26:33.454911 : IOT sala: recebeu o comando=ligar
+2023-09-26 20:26:33.484611 : USUARIO RECEBEU: CONSOLE: digite SENSOR_ID COMANDO
+
+2023-09-26 20:26:34.456397 : CONSOLE RECEBEU: sala consulta
+2023-09-26 20:26:34.456646 : IOT sala: recebeu o comando=consulta
+2023-09-26 20:26:34.456887 : MONITOR: sensor sala enviou sala=ON
+2023-09-26 20:26:34.457129 : USUARIO RECEBEU: sala=ON
+
+2023-09-26 20:26:35.461975 : CONSOLE RECEBEU: todos consulta
+2023-09-26 20:26:35.462844 : IOT sala: recebeu o comando=consulta
+2023-09-26 20:26:35.462896 : IOT quarto: recebeu o comando=consulta
+2023-09-26 20:26:35.463030 : IOT cozinha: recebeu o comando=consulta
+2023-09-26 20:26:35.463306 : MONITOR: sensor sala enviou sala=ON
+2023-09-26 20:26:35.463536 : MONITOR: sensor quarto enviou quarto=OFF
+2023-09-26 20:26:35.463742 : MONITOR: sensor cozinha enviou cozinha=OFF
+2023-09-26 20:26:35.463837 : USUARIO RECEBEU: sala=ON
+
+2023-09-26 20:26:35.464153 : USUARIO RECEBEU: quarto=OFF
+cozinha=OFF
+
+2023-09-26 20:26:36.467001 : CONSOLE RECEBEU: quarto shutdown
+2023-09-26 20:26:36.467772 : IOT quarto: recebeu o comando=shutdown
+2023-09-26 20:26:36.468148 : IOT quarto: SHUTDOWN, BYE!
+2023-09-26 20:26:36.468297 : MONITOR: sensor quarto encerrou
+2023-09-26 20:26:37.472146 : CONSOLE RECEBEU: quarto consulta
+2023-09-26 20:26:37.472734 : CONSOLE: O sensor quarto nao existe
+2023-09-26 20:26:37.473080 : USUARIO RECEBEU: O sensor quarto nao existe
+
+2023-09-26 20:26:37.473381 : USUARIO RECEBEU: Sensores conectados: sala,cozinha
+'''
