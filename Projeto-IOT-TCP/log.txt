@@ -1,0 +1,44 @@
+2023-09-26 19:01:56.665914 : MONITOR: aguardando dispositivos de IOT em 9999
+2023-09-26 19:01:56.665969 : CONSOLE: aguardando conexão do usuário em 8888
+2023-09-26 19:04:23.566758 : esqueci de fazer o exercicio 5
+2023-09-26 19:04:23.567138 : MONITOR: o sensor sala registrou: ('127.0.0.1', 49896)
+2023-09-26 19:04:23.567291 : esqueci de fazer o exercicio 5
+2023-09-26 19:04:23.567396 : MONITOR: o sensor quarto registrou: ('127.0.0.1', 49897)
+2023-09-26 19:04:23.570336 : esqueci de fazer o exercicio 5
+2023-09-26 19:04:23.570430 : MONITOR: o sensor cozinha registrou: ('127.0.0.1', 49898)
+2023-09-26 19:04:44.586333 : CONSOLE: O usuário conectou
+2023-09-26 19:04:44.594705 : CONSOLE RECEBEU: sala ligar
+2023-09-26 19:04:44.594959 : IOT sala: recebeu o comando=ligar
+2023-09-26 19:04:44.623654 : USUARIO RECEBEU: CONSOLE: digite SENSOR_ID COMANDO
+
+2023-09-26 19:04:45.599988 : CONSOLE RECEBEU: sala consulta
+2023-09-26 19:04:45.600423 : IOT sala: recebeu o comando=consulta
+2023-09-26 19:04:45.600665 : esqueci de fazer o exercicio 6
+2023-09-26 19:04:46.605478 : CONSOLE RECEBEU: todos consulta
+2023-09-26 19:04:46.606045 : esqueci de fazer o exercicio 4
+2023-09-26 19:04:47.610521 : CONSOLE RECEBEU: quarto shutdown
+2023-09-26 19:04:47.611596 : IOT quarto: recebeu o comando=shutdown
+2023-09-26 19:04:47.612068 : IOT quarto: SHUTDOWN, BYE!
+2023-09-26 19:04:47.612225 : MONITOR: sensor quarto encerrou
+2023-09-26 19:04:48.615654 : CONSOLE RECEBEU: quarto consulta
+2023-09-26 19:04:48.616171 : CONSOLE: O sensor quarto nao existe
+2023-09-26 19:04:48.616417 : esqueci de fazer o exercicio 3
+2023-09-26 19:04:48.616723 : USUARIO RECEBEU: O sensor quarto nao existe
+
+2023-09-26 19:05:08.727590 : USUARIO RECEBEU: COMANDO INCORRETO: Digite SENSOR_ID COMANDO
+
+2023-09-26 19:05:08.727590 : CONSOLE RECEBEU: quarto consulta
+2023-09-26 19:05:08.728013 : CONSOLE: O sensor quarto nao existe
+2023-09-26 19:05:08.728237 : USUARIO RECEBEU: O sensor quarto nao existe
+
+2023-09-26 19:05:08.728293 : esqueci de fazer o exercicio 3
+2023-09-26 19:05:24.876960 : USUARIO RECEBEU: COMANDO INCORRETO: Digite SENSOR_ID COMANDO
+
+2023-09-26 19:05:24.876953 : CONSOLE RECEBEU: quarto consulta
+2023-09-26 19:05:24.877394 : CONSOLE: O sensor quarto nao existe
+2023-09-26 19:05:24.877586 : USUARIO RECEBEU: O sensor quarto nao existe
+
+2023-09-26 19:05:24.877658 : esqueci de fazer o exercicio 3
+2023-09-26 19:05:27.475422 : CONSOLE: aguardando conexão do usuário em 8888
+2023-09-26 19:05:28.322086 : MONITOR: sensor cozinha encerrou
+2023-09-26 19:05:28.322928 : MONITOR: sensor sala encerrou
