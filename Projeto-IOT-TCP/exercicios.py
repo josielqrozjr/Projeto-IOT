@@ -49,7 +49,10 @@ def exercicio2(console: socket, dados: bytes):
     # Para enviar os dados execute: conexão.send( dados em bytes)
     # Observe o tipo dos argumentos da função para saber se precisa fazer conversão
     
-    fazLog('esqueci de fazer o exercicio 2\n') # comente quando fizer o exercicio
+    if console is not None:
+        console.send(dados)
+
+    # fazLog('esqueci de fazer o exercicio 2\n') # comente quando fizer o exercicio
 
 def exercicio3(console: socket, SENSORES: dict):
     '''
@@ -65,7 +68,12 @@ def exercicio3(console: socket, SENSORES: dict):
     # Para enviar a mensagem use console.send(bytes). 
     # Não esqueça de converter de string para bytes com encode()
 
-    fazLog('esqueci de fazer o exercicio 3\n') # comente quando fizer o exercicio
+    if console is not None:
+        msg = 'Sensores conectados: ' + ','.join(SENSORES.keys())
+        converter = msg.encode("utf-8")
+        console.send(converter)
+
+    # fazLog('esqueci de fazer o exercicio 3\n') # comente quando fizer o exercicio
 
 def exercicio4(SENSORES: dict, commando: str):
     '''
@@ -80,8 +88,10 @@ def exercicio4(SENSORES: dict, commando: str):
     # Faça um for para executar conexao_do_sensor.send(bytes)
     # Não esqueça de converter de string para bytes com encode()
 
+    for conexao in SENSORES.values():
+        conexao.send(commando.encode("utf-8"))
     
-    fazLog('esqueci de fazer o exercicio 4\n') # comente quando fizer o exercicio
+    # fazLog('esqueci de fazer o exercicio 4\n') # comente quando fizer o exercicio
 
 def exercicio5(s: socket, addr: tuple):
     '''
