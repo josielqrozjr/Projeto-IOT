@@ -108,12 +108,14 @@ def exercicio5(s: socket, addr: tuple):
     # caso o não caia na exceção, coloque um return abaixo do connect
     # substitua o print da exceção por um time.sleep(10)
 
-    try:
-        s.connect(addr)
-    except Exception as e:
-        print(e)
+    while True:
+        try:
+            s.connect(addr)
+            return
+        except Exception as e:
+            time.sleep(10)
         
-    fazLog('esqueci de fazer o exercicio 5\n') # comente quando fizer o exercicio
+    # fazLog('esqueci de fazer o exercicio 5\n') # comente quando fizer o exercicio
 
 def exercicio6(s: socket, sensor: str, estado: str):
     '''
