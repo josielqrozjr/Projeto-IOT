@@ -1,0 +1,19 @@
+2023-09-26 21:05:33.149224 : MONITOR: aguardando dispositivos de IOT em 9999
+2023-09-26 21:05:33.149244 : CONSOLE: aguardando conexão do usuário em 8888
+2023-09-26 21:05:59.308422 : SENSOR quarto: registrou no Monitor ('127.0.0.1', 9999)
+2023-09-26 21:05:59.308448 : MONITOR: o sensor quarto registrou: ('127.0.0.1', 60191)
+2023-09-26 21:05:59.308555 : MONITOR: o sensor sala registrou: ('127.0.0.1', 62558)
+2023-09-26 21:05:59.308686 : SENSOR sala: registrou no Monitor ('127.0.0.1', 9999)
+2023-09-26 21:05:59.309910 : MONITOR: o sensor cozinha registrou: ('127.0.0.1', 54446)
+2023-09-26 21:05:59.309957 : SENSOR cozinha: registrou no Monitor ('127.0.0.1', 9999)
+2023-09-26 21:06:15.138354 : CONSOLE: O usuário conectou
+2023-09-26 21:06:15.147557 : CONSOLE RECEBEU: sala ligar
+2023-09-26 21:06:15.147871 : IOT sala: recebeu o comando=ligar
+2023-09-26 21:06:15.177986 : USUARIO RECEBEU: CONSOLE: digite SENSOR_ID COMANDO
+
+2023-09-26 21:06:16.150110 : CONSOLE RECEBEU: sala consulta
+2023-09-26 21:06:16.150330 : IOT sala: recebeu o comando=consulta
+2023-09-26 21:06:16.150481 : MONITOR: sensor sala enviou sala=ON
+
+2023-09-26 21:06:16.150715 : USUARIO RECEBEU: sensor sala enviou sala=ON
+
